@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AuraVault Privacy Policy</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0a0a0c; --panel:rgba(255,255,255,.03); --text:#f3f4f6; --muted:rgba(243,244,246,.7); --gold:#d4af37; --line:rgba(255,255,255,.08); }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif; background:linear-gradient(180deg,#0a0a0c,#121216); color:var(--text); line-height:1.68; }
+    main, header, footer { width:min(900px,calc(100% - 36px)); margin:0 auto; }
+    header { padding:28px 0 20px; display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap; border-bottom:1px solid var(--line); }
+    a { color:var(--gold); text-decoration:none; } a:hover { text-decoration:underline; }
+    h1 { font-size:clamp(34px,6vw,58px); line-height:1; margin:46px 0 14px; color:var(--gold); }
+    h2 { margin-top:34px; font-size:22px; color:var(--gold); }
+    p, li { color:var(--muted); }
+    .notice { padding:18px; background:var(--panel); border:1px solid var(--line); border-radius:16px; }
+    .summary { padding:20px; background:var(--panel); border:1px solid var(--line); border-radius:16px; margin:24px 0; }
+    .summary h2 { margin-top:0; }
+    footer { color:rgba(243,244,246,.48); font-size:13px; padding:36px 0 42px; margin-top:42px; border-top:1px solid var(--line); text-align:center; }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>AuraVault Privacy Policy</strong>
+    <nav><a href="./">Home</a> · <a href="./support.html">Support</a> · <a href="./privacy-zh-Hans.html">简体中文</a> · <a href="./privacy-zh-Hant.html">繁體中文</a> · <a href="./privacy-fr.html">Français</a> · <a href="./privacy-ko.html">한국어</a></nav>
+  </header>
+
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="notice">Effective date: July 1, 2026 · Last updated: July 1, 2026<br>AuraVault ("we", "us", "our") operates the AuraVault application ("the App"). This Privacy Policy explains what information the App processes, how it is used, and the rights you have over it. By using the App, you agree to the practices described here.</p>
+
+    <div class="summary">
+      <h2>At a Glance</h2>
+      <ul>
+        <li><strong>We do NOT collect:</strong> names, emails, phone numbers, location, contacts, photos, or any account information. The App has no login system.</li>
+        <li><strong>We DO process:</strong> a random local device ID (for rate limiting, if any), language preference, and StoreKit transaction identifiers and signed transaction data used to verify Premium entitlement with Apple.</li>
+        <li><strong>100% Local Encryption:</strong> All photos, videos, and audio files are encrypted locally on your device using AES-256. We do NOT have access to your files, and they are never uploaded to our servers.</li>
+        <li><strong>We do NOT sell</strong> any data to anyone, and we do NOT use data for advertising.</li>
+      </ul>
+    </div>
+
+    <h2>1. Data Controller</h2>
+    <p>AuraVault is published by an individual developer (GitHub username: <strong>jiqunying</strong>). For the purposes of data protection laws in your region, the developer acts as the data controller. To exercise any right under this policy, contact us via the <a href="./support.html">Support page</a>.</p>
+
+    <h2>2. Information We Process</h2>
+    <p>AuraVault is designed with privacy as the absolute priority. The only data processed includes:</p>
+    <ul>
+      <li><strong>Local Device ID:</strong> A randomly generated UUID stored locally to identify the device for configuration purposes.</li>
+      <li><strong>Language Preference:</strong> Stored locally to display the App interface in your chosen language.</li>
+      <li><strong>StoreKit Transaction Data:</strong> Transaction ID and signed JWS from Apple StoreKit 2 to verify Premium entitlement.</li>
+    </ul>
+    <p><strong>What we do NOT collect or process:</strong> We do not collect names, email addresses, phone numbers, precise location, contacts, photos, camera input (except locally for intruder capture), microphone audio, biometric data, browsing history, or device hardware identifiers (IDFA/IDFV).</p>
+
+    <h2>3. How Information Is Used</h2>
+    <ul>
+      <li>To encrypt and secure your photos and videos locally on your device.</li>
+      <li>To unlock Premium features after a valid Apple StoreKit purchase.</li>
+      <li>To display the App interface in your chosen language.</li>
+    </ul>
+
+    <h2>4. Third-Party Service Providers</h2>
+    <p>The App integrates with the following third-party services to deliver core functionalities:</p>
+    <ul>
+      <li><strong>Apple Inc. (StoreKit 2):</strong> Used to process and verify in-app purchases and subscriptions.</li>
+      <li><strong>RevenueCat, Inc.:</strong> Used to manage cross-platform subscription status and verify purchases without a custom backend.</li>
+      <li><strong>Google AdMob:</strong> Used to display non-personalized ads to free users.</li>
+    </ul>
+
+    <h2>5. Data Retention</h2>
+    <ul>
+      <li><strong>Your encrypted media files:</strong> Stored strictly on your local device. Deleting the App erases all local data permanently. We cannot recover it for you.</li>
+      <li><strong>Language preference:</strong> Stored locally on your device.</li>
+    </ul>
+
+    <h2>6. Your Privacy Rights</h2>
+    <p>You have the right to access, delete, or export your local data at any time. Since we do not store your data on any server, you can exercise your right to delete all data simply by uninstalling the App or deleting files within the App.</p>
+
+    <h2>7. Contact</h2>
+    <p>For any privacy question, data access request, deletion request, or complaint, contact us via the <a href="./support.html">Support page</a>.</p>
+  </main>
+
+  <footer>
+    <p>© 2026 AuraVault. Required links: <a href="./privacy.html">Privacy Policy</a> · <a href="./support.html">Support</a> · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Apple Standard EULA</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AuraVault Support</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0a0a0c; --panel:rgba(255,255,255,.03); --text:#f3f4f6; --muted:rgba(243,244,246,.7); --gold:#d4af37; --line:rgba(255,255,255,.08); }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",sans-serif; background:linear-gradient(180deg,#0a0a0c,#121216); color:var(--text); line-height:1.68; }
+    main, header, footer { width:min(700px,calc(100% - 36px)); margin:0 auto; }
+    header { padding:28px 0 20px; display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap; border-bottom:1px solid var(--line); }
+    a { color:var(--gold); text-decoration:none; } a:hover { text-decoration:underline; }
+    h1 { font-size:clamp(34px,6vw,58px); line-height:1; margin:46px 0 14px; color:var(--gold); }
+    h2 { margin-top:34px; font-size:22px; color:var(--gold); }
+    p, li { color:var(--muted); }
+    .notice { padding:18px; background:var(--panel); border:1px solid var(--line); border-radius:16px; }
+    footer { color:rgba(243,244,246,.48); font-size:13px; padding:36px 0 42px; margin-top:42px; border-top:1px solid var(--line); text-align:center; }
+  </style>
+</head>
+<body>
+  <header>
+    <strong>AuraVault Support</strong>
+    <nav><a href="./">Home</a> · <a href="./privacy.html">Privacy Policy</a></nav>
+  </header>
+
+  <main>
+    <h1>Technical Support</h1>
+    <p class="notice">Need help with AuraVault? We are here to assist you. Since AuraVault is a 100% local encrypted app, we do not store your passwords or files on our servers. Please read the FAQs below first.</p>
+
+    <h2>Frequently Asked Questions (FAQ)</h2>
+    
+    <h3>Q1: I forgot my master passcode. Can you reset it for me?</h3>
+    <p><strong>A:</strong> No. To ensure absolute privacy, AuraVault encrypts everything locally on your device and does not upload your passcode to any server. If you lose your passcode and did not set up biometric unlock (Face ID/Touch ID), we cannot recover your files. Please keep your passcode safe.</p>
+
+    <h3>Q2: Where are my photos and videos stored?</h3>
+    <p><strong>A:</strong> All your files are encrypted using AES-256 and stored strictly inside the App's local sandbox directory. They are never uploaded to any cloud server unless you manually export them.</p>
+
+    <h3>Q3: How do I restore my Premium subscription?</h3>
+    <p><strong>A:</strong> Open AuraVault, go to Settings, tap on "Upgrade to Premium" or "Paywall", and click the "Restore Purchases" button at the bottom. Your subscription will be verified and restored instantly via RevenueCat.</p>
+
+    <h2>Contact Us</h2>
+    <p>If you have other questions, bug reports, or business inquiries, please reach out to us by opening an issue on our GitHub repository or contacting the developer:</p>
+    <ul>
+      <li>GitHub: <a href="https://github.com/jiqunying" target="_blank" rel="noopener">github.com/jiqunying</a></li>
+      <li>Developer Email: <strong>jiqunying@gmail.com</strong> (or your support email)</li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>© 2026 AuraVault. Required links: <a href="./privacy.html">Privacy Policy</a> · <a href="./support.html">Support</a> · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Apple Standard EULA</a></p>
+  </footer>
+</body>
+</html>
