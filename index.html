@@ -90,6 +90,7 @@
     <div class="brand">AuraVault</div>
     <nav aria-label="Site navigation">
       <a href="./privacy.html" id="nav-privacy">Privacy Policy</a>
+      <a href="./terms.html" id="nav-terms">Terms of Use</a>
       <a href="./support.html" id="nav-support">Support</a>
       <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Apple Standard EULA</a>
     </nav>
@@ -153,7 +154,7 @@
 
   <footer>
     <p id="footer-text">© 2026 AuraVault. AuraVault is designed for personal privacy protection and secure local storage. Your data never leaves your device.</p>
-    <p>Required Links: <a href="./privacy.html" id="foot-privacy">Privacy Policy</a> · <a href="./support.html" id="foot-support">Support</a> · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Apple Standard EULA</a></p>
+    <p>Required Links: <a href="./privacy.html" id="foot-privacy">Privacy Policy</a> · <a href="./terms.html" id="foot-terms">Terms of Use</a> · <a href="./support.html" id="foot-support">Support</a> · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Apple Standard EULA</a></p>
   </footer>
 
   <script>
@@ -161,6 +162,7 @@
       en: {
         title: "AuraVault - Military-Grade Secure Photo & Video Vault",
         navPrivacy: "Privacy Policy",
+        navTerms: "Terms of Use",
         navSupport: "Support",
         heroTitle: "Military-Grade <span>AES-256</span> Secure Photo & Video Vault.",
         heroDesc: "AuraVault protects your private photos, videos, and sensitive files with binary-level encryption. Absolute privacy for iOS, macOS, and Android.",
@@ -186,6 +188,7 @@
       'zh-Hans': {
         title: "AuraVault - 军工级安全私密相册保险箱",
         navPrivacy: "隐私政策",
+        navTerms: "使用条款",
         navSupport: "技术支持",
         heroTitle: "军工级 <span>AES-256</span> 安全私密相册保险箱",
         heroDesc: "AuraVault 采用二进制底层文件加密算法，为您的私密照片、视频和敏感文件提供绝对安全的隐私防护。支持 iOS、macOS 和 Android 三端。",
@@ -211,6 +214,7 @@
       'zh-Hant': {
         title: "AuraVault - 軍工級安全私密相冊保險箱",
         navPrivacy: "隱私政策",
+        navTerms: "使用條款",
         navSupport: "技術支持",
         heroTitle: "軍工級 <span>AES-256</span> 安全私密相冊保險箱",
         heroDesc: "AuraVault 採用二進位底層檔案加密演算法，為您的私密照片、影片和敏感檔案提供絕對安全的隱私防護。支援 iOS、macOS 和 Android 三端。",
@@ -236,6 +240,7 @@
       fr: {
         title: "AuraVault - Coffre-fort Photo et Vidéo Sécurisé",
         navPrivacy: "Politique de Confidentialité",
+        navTerms: "Conditions d'utilisation",
         navSupport: "Assistance",
         heroTitle: "Coffre-fort Photo & Vidéo Sécurisé <span>AES-256</span> de Qualité Militaire.",
         heroDesc: "AuraVault protège vos photos, vidéos et fichiers privés avec un cryptage au niveau binaire. Confidentialité absolue pour iOS, macOS et Android.",
@@ -261,6 +266,7 @@
       ko: {
         title: "AuraVault - 군사급 보안 비밀 사진 및 동영상 금고",
         navPrivacy: "개인정보 처리방침",
+        navTerms: "이용약관",
         navSupport: "고객 지원",
         heroTitle: "군사급 <span>AES-256</span> 보안 비밀 사진 및 동영상 금고.",
         heroDesc: "AuraVault는 바이너리 수준 파일 암호화 알고리즘을 사용하여 개인 사진, 동영상 및 민감한 파일을 안전하게 보호합니다. iOS, macOS 및 Android 완벽 지원.",
@@ -291,6 +297,7 @@
 
       document.title = data.title;
       document.getElementById('nav-privacy').innerText = data.navPrivacy;
+      document.getElementById('nav-terms').innerText = data.navTerms;
       document.getElementById('nav-support').innerText = data.navSupport;
       document.getElementById('hero-title').innerHTML = data.heroTitle;
       document.getElementById('hero-desc').innerText = data.heroDesc;
@@ -317,10 +324,14 @@
       document.getElementById('nav-privacy').href = `./privacy-${lang}.html`;
       document.getElementById('btn-privacy').href = `./privacy-${lang}.html`;
       document.getElementById('foot-privacy').href = `./privacy-${lang}.html`;
+      document.getElementById('nav-terms').href = `./terms-${lang}.html`;
+      document.getElementById('foot-terms').href = `./terms-${lang}.html`;
       if (lang === 'en') {
         document.getElementById('nav-privacy').href = `./privacy.html`;
         document.getElementById('btn-privacy').href = `./privacy.html`;
         document.getElementById('foot-privacy').href = `./privacy.html`;
+        document.getElementById('nav-terms').href = `./terms.html`;
+        document.getElementById('foot-terms').href = `./terms.html`;
       }
 
       // Update active button state
